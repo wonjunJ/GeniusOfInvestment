@@ -41,9 +41,9 @@ public class GameService {
             throw new CustomBadRequestException(ErrorType.NOT_FOUND_ROOM);
         }
         //임시로 방안에 유저가 4명이 안되면 게임 시작을 못하도록=====================
-        if(room.getParticipants().size() < 4){
-            throw new CustomBadRequestException(ErrorType.NOT_FOUND_ROOM);
-        }
+//        if(room.getParticipants().size() < 4){
+//            throw new CustomBadRequestException(ErrorType.NOT_FOUND_ROOM);
+//        }
 
         //방 상태 바꾸기
         Optional<Room> rinfo = roomRepository.findById(grId);

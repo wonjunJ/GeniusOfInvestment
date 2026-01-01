@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 
 ARG JAR_FILE=build/libs/*SNAPSHOT.jar
 ARG JASYPT_KEY
